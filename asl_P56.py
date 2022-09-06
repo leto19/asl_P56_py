@@ -1,3 +1,14 @@
+"""
+asl_P56_py
+Python implementation of ITU ASL P56.
+
+Code is ported from the MATLAB implementation 
+found in the attachement to 
+Philipos C. Loizou's Speech Enhancement Book.
+
+George Close (glclose1@sheffield.ac.uk) 2022
+"""
+
 import numpy as np
 from scipy.signal import lfilter
 def asl_P56(x,fs,nbits):
