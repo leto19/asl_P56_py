@@ -132,6 +132,5 @@ def bin_interp(upcount,lwcount,upthr,lwthr,Margin,tol):
 
 if __name__ == '__main__':
     import soundfile as sf
-    import numpy as np
     speech,fs = sf.read('sp04.wav')
     print(asl_P56(speech,float(fs),float(16)))
