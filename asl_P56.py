@@ -83,6 +83,10 @@ def asl_P56(x,fs,nbits):
                c0 = 10**(c10/20)
                break
     return asl_ms, asl, c0
+
+
+
+
 def bin_interp(upcount,lwcount,upthr,lwthr,Margin,tol):
     if tol < 0:
         tol = -tol
@@ -129,6 +133,9 @@ def bin_interp(upcount,lwcount,upthr,lwthr,Margin,tol):
     asl_ms_log = midcount
     cc = midthr
     return asl_ms_log,cc
+
+
+
 
 if __name__ == '__main__':
     import soundfile as sf
