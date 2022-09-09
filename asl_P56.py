@@ -68,9 +68,9 @@ def asl_P56(x,fs,nbits):
     CdB[0]=CdB1
     Delta[0] = AdB1 - CdB1
 
-    for k in range(1,int(thres_no)):
-       AdB[k] = 10*np.log10(sq/(a[j]+1e-10)+1e-10)
-       CdB[k] = 20*np.log10(c[j]+1e-10)
+    for j in range(1,int(thres_no)):
+       AdB[j] = 10*np.log10(sq/(a[j]+1e-10)+1e-10)
+       CdB[j] = 20*np.log10(c[j]+1e-10)
 
     for j in range(1,int(thres_no)):
        if a[j] != 0:
